@@ -1,0 +1,9 @@
+[
+  { "id": "CM-01", "class": "SECSAttrReqCfg", "summary": "Any section with a QualAttrN key fails to load (rc != 0 should be rc != 1); S14F1 qualifiers cannot be used", "severity": "Medium", "status": "Open" },
+  { "id": "CM-02", "class": "MiBTestConfig", "summary": "GetHandlingFunctionName(string[]) throws when more frames are received than configured and aborts the lookup; used by HandleMiscDataRequestCmd (Z protocol)", "severity": "Medium", "status": "Open" },
+  { "id": "CM-03", "class": "MiBTestConfig", "summary": "FrameData is ordered by file position, not by FrameDataN number", "severity": "Medium", "status": "Open" },
+  { "id": "CM-04", "class": "GemCliConfig", "summary": "Trailing backslash in RCMDDestPath is never removed (Remove() result discarded)", "severity": "Low", "status": "Open" },
+  { "id": "CM-05", "class": "GemCliConfig", "summary": "Section name after the comma is not trimmed; 'file, Section' fails with -8", "severity": "Low", "status": "Open" },
+  { "id": "CM-06", "class": "MiBTestConfig", "summary": "Two or more non-numeric state values return -1 (exception) instead of -3", "severity": "Low", "status": "Open" },
+  { "id": "CM-07", "class": "MiBTestConfig", "summary": "GetGemStateNumber returns -1 instead of -2 for an unknown model; the -2 branch is dead code", "severity": "Low", "status": "Open" }
+]

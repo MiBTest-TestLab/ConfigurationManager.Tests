@@ -45,6 +45,13 @@ All classes under test read their settings from files, and `MiBTestConfig` keeps
 * `Helpers\MiBTestConfigFixture` – a complete, **valid** Socket Comm `MiBTest.ini`. Each test breaks exactly one setting and asserts the resulting error code / message.
 * `Helpers\GemCliConfigFixture` – a complete, valid set of STI CLI files (main section, variable config, JSON, remote command, terminal request, attribute request and attribute message files). Set a file builder to `null` to simulate a missing file.
 
+Golden-file tests complement the fixtures. They load frozen copies of real configuration files:
+
+* `TestData\MiBTest.ini` – real Socket-mode configuration (`MiBTestConfigGoldenFileTests`).
+* `TestData2\` – real STI CLI-mode set: `MiBTest.ini`, `CliGemVar 1.json`, `GetAttrReq.dat` (`MiBTestConfigStiCliGoldenFileTests`). The real file uses absolute `D:\tScanSecsGem\MiBTest\` paths, so each test copies the set into a temp folder and rewrites that prefix.
+
+Fixture tests check the reading rules and every error code; golden-file tests check that the real configuration works. When a real configuration file changes, update its copy here and re-run the tests.
+
 > A `;` used as the whole value (for example `FrameDelimiter=;`, as in the real MiBTest.ini) is read correctly; this is confirmed by `MiBTestConfigGoldenFileTests`. A `;` in the middle of a value has not been tested, so the fixture still avoids it.
 
 ## Test Scope
@@ -66,6 +73,11 @@ All classes under test read their settings from files, and `MiBTestConfig` keeps
 
 * Interfaces (`IConfigManager`, `IMsgHandlingConfig`, ...) and pure property bags (`WaferMapItemsSettings`, `ValueRowIndices`).
 * `JsonVidSettingsException` – only forwards to `Exception` constructors.
+* `catch` blocks that only report unexpected exceptions (about 40 in `MiBTestConfig`).
+* Dead code: `GemCliConfig.GetCliEventsToCEIDsCfg` (call disabled in ver 1.0.0.9), `MiBTestConfig.ExtractEventName`, `MiBTestConfig.Me`, and the private parameterless constructors of `GemCliConfig`, `SECSAttrReqCfg`, `JsonVidConfig` and `GemCliVariable`.
+* Some `ToString()` branches (STI CLI mode, empty settings, nested lists).
+
+Baseline coverage (2026-10-28): 85.1% line coverage of `ConfigurationManager`. Branch coverage is not collected by the Microsoft code coverage tool.
 
 ## Known Bugs (`[Category("KnownBug")]`)
 

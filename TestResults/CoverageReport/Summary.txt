@@ -1,0 +1,45 @@
+Summary
+  Generated on: 28/10/2026 - 4:35:48 pm
+  Parser: Cobertura
+  Assemblies: 1
+  Classes: 25
+  Files: 18
+  Line coverage: 85.1%
+  Covered lines: 2301
+  Uncovered lines: 402
+  Coverable lines: 2703
+  Total lines: 5315
+  Covered branches: 0
+  Total branches: 0
+  Method coverage: 97.2% (320 of 329)
+  Full method coverage: 78.4% (258 of 329)
+  Covered methods: 320
+  Fully covered methods: 258
+  Total methods: 329
+
+ConfigurationManager                                      85.1%
+  ConfigurationManager.CLIVarCfg                           100%
+  ConfigurationManager.CommonHandlingMethodSettings        100%
+  ConfigurationManager.GemCliConfig                       86.7%
+  ConfigurationManager.GemCliVariable                     82.3%
+  ConfigurationManager.HandlingMethodCfg                   100%
+  ConfigurationManager.IntReturn                           100%
+  ConfigurationManager.MapSetupDataFuncArgs                100%
+  ConfigurationManager.MapSetupParamsBase                  100%
+  ConfigurationManager.MiBTestConfig                        85%
+  ConfigurationManager.SECSAttribute.SECSAttrQualCfg       100%
+  ConfigurationManager.SECSAttribute.SECSAttrReqCfg       77.7%
+  ConfigurationManager.SECSAttribute.SECSAttrReqCfg<T>    77.7%
+  ConfigurationManager.SECSAttribute.SECSAttrReqSetting   65.7%
+  ConfigurationManager.StringListReturn                    100%
+  ConfigurationManager.ValueRowIndices                     100%
+  ConfigurationManager.WaferMapItemsSettings               100%
+  JsonVidSettings.CliGemVarCfgJsonDeserializer             100%
+  JsonVidSettings.Data                                     100%
+  JsonVidSettings.DataJsonConverter                        100%
+  JsonVidSettings.JsonCliGemVarConfig                     57.1%
+  JsonVidSettings.JsonVidConfig                           77.3%
+  JsonVidSettings.JsonVidSettingsException                  50%
+  JsonVidSettings.ListData                                83.8%
+  JsonVidSettings.Root                                     100%
+  JsonVidSettings.StringData                               100%

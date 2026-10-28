@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ConfigurationManager.Tests Test Summary</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; background: #f5f6f8; color: #1f2430; margin: 0; padding: 32px; }
+  .page { max-width: 860px; margin: 0 auto; background: #ffffff; border-radius: 8px; padding: 32px 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .subtitle { color: #6b7280; font-size: 13px; margin-bottom: 28px; }
+  .stat-row { display: flex; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 120px; background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 6px; padding: 14px 16px; text-align: center; }
+  .stat-card .num { font-size: 26px; font-weight: 700; }
+  .stat-card .label { font-size: 12px; color: #6b7280; margin-top: 4px; }
+  .stat-card.pass .num { color: #15803d; }
+  .stat-card.fail .num { color: #b91c1c; }
+  h2 { font-size: 16px; margin-top: 32px; margin-bottom: 12px; border-left: 4px solid #2563eb; padding-left: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #eef0f3; }
+  th { color: #6b7280; font-weight: 600; background: #f8fafc; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+  .badge-fixed { background: #dcfce7; color: #15803d; }
+  .badge-open { background: #fee2e2; color: #b91c1c; }
+  .badge-mid { background: #fef3c7; color: #92400e; }
+  .note { font-size: 12px; color: #6b7280; background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 6px; padding: 12px 14px; margin-top: 24px; line-height: 1.6; }
+  .cov-bar-wrap { background: #eef0f3; border-radius: 4px; overflow: hidden; width: 120px; height: 8px; display: inline-block; vertical-align: middle; margin-right: 8px; }
+  .cov-bar { height: 100%; background: #2563eb; }
+  .empty { color: #9ca3af; font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="page">
+    <h1>ConfigurationManager.Tests Test Summary</h1>
+    <div class="subtitle">Generated: 2026-10-28 16:40</div>
+
+    <div class="stat-row">
+      <div class="stat-card">
+        <div class="num">260</div>
+        <div class="label">Total Tests</div>
+      </div>
+      <div class="stat-card pass">
+        <div class="num">253</div>
+        <div class="label">Passed</div>
+      </div>
+      <div class="stat-card fail">
+        <div class="num">7</div>
+        <div class="label">Failed</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">7.7s</div>
+        <div class="label">Duration</div>
+      </div>
+    </div>
+
+    <h2>Modules Covered This Run</h2>
+    <table>
+      <thead>
+        <tr><th>Module (Class)</th><th>Description</th><th>Code Coverage</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>MiBTestConfig</td><td>Reads MiBTest.ini: DLL paths, GEM state tables and the handler message protocol rules</td><td><span class='cov-bar-wrap'><span class='cov-bar' style='width:84.6%'></span></span>84.6%</td></tr>
+<tr><td>GemCliConfig</td><td>Reads the STI CLI mode settings and the files they point to</td><td><span class='cov-bar-wrap'><span class='cov-bar' style='width:86.7%'></span></span>86.7%</td></tr>
+<tr><td>JsonVidConfig</td><td>Maps GEM variables (VIDs) to STI CLI variables from a JSON file</td><td><span class='cov-bar-wrap'><span class='cov-bar' style='width:77.1%'></span></span>77.1%</td></tr>
+<tr><td>SECSAttrReqCfg</td><td>Reads the S14F1 attribute request settings</td><td><span class='cov-bar-wrap'><span class='cov-bar' style='width:77.4%'></span></span>77.4%</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Defects Found</h2>
+    <table>
+      <thead>
+        <tr><th>ID</th><th>Module</th><th>Description</th><th>Severity</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CM-01</td><td>SECSAttrReqCfg</td><td>Any section with a QualAttrN key fails to load (rc != 0 should be rc != 1); S14F1 qualifiers cannot be used</td><td><span class='badge badge-mid'>Medium</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+<tr><td>CM-02</td><td>MiBTestConfig</td><td>GetHandlingFunctionName(string[]) throws when more frames are received than configured and aborts the lookup; used by HandleMiscDataRequestCmd (Z protocol)</td><td><span class='badge badge-mid'>Medium</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+<tr><td>CM-03</td><td>MiBTestConfig</td><td>FrameData is ordered by file position, not by FrameDataN number</td><td><span class='badge badge-mid'>Medium</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+<tr><td>CM-04</td><td>GemCliConfig</td><td>Trailing backslash in RCMDDestPath is never removed (Remove() result discarded)</td><td><span class='badge badge-mid'>Low</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+<tr><td>CM-05</td><td>GemCliConfig</td><td>Section name after the comma is not trimmed; 'file, Section' fails with -8</td><td><span class='badge badge-mid'>Low</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+<tr><td>CM-06</td><td>MiBTestConfig</td><td>Two or more non-numeric state values return -1 (exception) instead of -3</td><td><span class='badge badge-mid'>Low</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+<tr><td>CM-07</td><td>MiBTestConfig</td><td>GetGemStateNumber returns -1 instead of -2 for an unknown model; the -2 branch is dead code</td><td><span class='badge badge-mid'>Low</span></td><td><span class='badge badge-open'>Open</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      Notes:<br>
+      1. "Code Coverage" only covers the modules listed above that actually have tests written for
+      them this round; it excludes the other, untested components those modules depend on - which
+      is why these numbers are meaningful on their own.<br>
+      2. The full technical report (detailed TRX results, complete coverage breakdown) is available
+      in the TestResults directory for developers and testers to drill into specific issues.
+    </div>
+  </div>
+</body>
+</html>
