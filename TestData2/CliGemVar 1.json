@@ -1,0 +1,1159 @@
+{
+	"CliGemVarConfig": 
+	[
+		{
+			"VarName": "GemDeviceName",
+			"VID": 5,
+			"Data": {
+				"Type": "A",
+				"Value": "HostComm/EquipmentConstant/GemDeviceName"
+			}
+		},
+		{
+			"VarName": "GemEstabCommDelay",
+			"VID": 6,
+			"Data": {
+				"Type": "U2",
+				"Value": "HostComm/EquipmentConstant/GemEstabCommDelay"
+			}
+		},
+		{
+			"VarName": "GemRecipeType",
+			"VID": 15,
+			"Data": {
+				"Type": "U1",
+				"Value": "HostComm/EquipmentConstant/GemRecipeType"
+			}
+		},
+		{
+			"VarName":"GemControlState",
+			"VID":28, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"HostComm/States/ControlState"
+			}
+		},
+		{
+			"VarName":"GemLinkState",
+			"VID":31, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"HostComm/States/LinkState"
+			}
+		},
+		{
+			"VarName":"GemPPExecName",
+			"VID":33, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Active Package Name"
+			}
+		},
+		{
+			"VarName":"GemPreviousControlState",
+			"VID":36, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"HostComm/States/Previous Control State"
+			}
+		},
+		{
+			"VarName":"GemPreviousProcessState",
+			"VID":37, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"HostComm/States/Previous Process State"
+			}
+		},
+		{
+			"VarName":"GemProcessState",
+			"VID":38, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"HostComm/States/Process State"
+			}
+		},
+		{
+			"VarName": "GemMaxSpoolTransmit",
+			"VID": 47,
+			"Data": {
+				"Type": "U4",
+				"Value": "HostComm/EquipmentConstant/GemMaxSpoolTransmit"
+			}
+		},
+		{
+			"VarName": "GemOverWriteSpool",
+			"VID": 63,
+			"Data": {
+				"Type": "BOOLEAN",
+				"Value": "HostComm/EquipmentConstant/GemOverWriteSpool"
+			}
+		},
+		{
+			"VarName": "GemConfigSpool",
+			"VID": 64,
+			"Data": {
+				"Type": "U1",
+				"Value": "HostComm/EquipmentConstant/GemConfigSpool"
+			}
+		},
+		{
+			"VarName": "ECIDChanged",
+			"VID": 81,
+			"Data": {
+				"Type": "U4",
+				"Value": "HostComm/EquipmentConstant/ECIDChanged"
+			}
+		},
+		{
+			"VarName":"MachineID",
+			"VID":301, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Master/Machine Info/Machine ID"
+			}
+		},
+		{
+			"VarName":"McStartUp",
+			"VID":302, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Control Status/Machine Start Up"
+			}
+		},
+		{
+			"VarName":"LotNumber",
+			"VID":311, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Lot Number"
+			}
+		},
+		{
+			"VarName":"OperatorID",
+			"VID":312, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Operator ID"
+			}
+		},
+		{
+			"VarName":"OperatorShift",
+			"VID":313, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Operator Shift"
+			}
+		},
+		{
+			"VarName":"LotQty",
+			"VID":314, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Lot Size"
+			}
+		},
+		{
+			"VarName":"OutputMode",
+			"VID":315, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Lot Info/Output Mode"
+			}
+		},
+		{
+			"VarName":"ReelBoxSize",
+			"VID":321, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Reel Box Size"
+			}
+		},
+		{
+			"VarName":"HandlerRecipe",
+			"VID":331, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Handler Recipe"
+			}
+		},
+		{
+			"VarName":"RCmdExecFailReason",
+			"VID":340, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"HostComm/RemoteCommand/FailRCommand"
+			}
+		},
+		{
+			"VarName":"LotStartTime",
+			"VID":341, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Lot Start Time"
+			}
+		},
+		{
+			"VarName":"LotEndTime",
+			"VID":342, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Lot End Time"
+			}
+		},
+		{
+			"VarName":"DMCodeCheckSetting",
+			"VID":344, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Setting/Common/Data Matrix Setting Name"
+			}
+		},
+		{
+			"VarName":"EndLotMode",
+			"VID":346, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Lot Info/End Lot Mode"
+			}
+		},
+		{
+			"VarName":"RescanMode",
+			"VID":348, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Lot Info/Rescan Mode"
+			}
+		},
+		{
+			"VarName":"OpenLotMode",
+			"VID":349, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Lot Info/Open Lot Mode"
+			}
+		},
+		{
+			"VarName":"RemoteCommandString",
+			"VID":350, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"HostComm/RemoteCommand/RCommandString"
+			}
+		},
+		{
+			"VarName":"TrayCol",
+			"VID":393, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Setting/Package/Tray Column"
+			}
+		},
+		{
+			"VarName":"TrayRow",
+			"VID":394, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Setting/Package/Tray Row"
+			}
+		},
+		{
+			"VarName":"BlueLightStatus",
+			"VID":395, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Tower Light Status/Blue Light"
+			}
+		},
+		{
+			"VarName":"GreenLightStatus",
+			"VID":396, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Tower Light Status/Green Light"
+			}
+		},
+		{
+			"VarName":"AmberLightStatus",
+			"VID":397, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Tower Light Status/Amber Light"
+			}
+		},
+		{
+			"VarName":"RedLightStatus",
+			"VID":398, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Runtime/Tower Light Status/Red Light"
+			}
+		},
+		{
+			"VarName":"WarningMsgID",
+			"VID":399, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Control Status/Warning ID"
+			}
+		},
+		{
+			"VarName":"WarningMsgText",
+			"VID":400, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Control Status/Warning Msg Text"
+			}
+		},
+		{
+			"VarName":"NetUPH",
+			"VID":401, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Net UPH"
+			}
+		},
+		{
+			"VarName":"GrossUPH",
+			"VID":402, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Gross UPH"
+			}
+		},
+		{
+			"VarName":"MTBA",
+			"VID":403, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/MTBA"
+			}
+		},
+		{
+			"VarName":"MUBA",
+			"VID":404, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/MUBA"
+			}
+		},
+		{
+			"VarName":"SprintUPH",
+			"VID":405, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Sprint UPH"
+			}
+		},
+		{
+			"VarName":"LotTime",
+			"VID":411, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Lot Time"
+			}
+		},
+		{
+			"VarName":"RunTime",
+			"VID":412, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Run Time"
+			}
+		},
+		{
+			"VarName":"JamTime",
+			"VID":413, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Jam Time"
+			}
+		},
+		{
+			"VarName":"OperAssistTime",
+			"VID":414, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Oper Assist Time"
+			}
+		},
+		{
+			"VarName":"StopTime",
+			"VID":415, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Stop Time"
+			}
+		},
+		{
+			"VarName":"OverheadTime",
+			"VID":416, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Overhead Time"
+			}
+		},
+		{
+			"VarName":"LotGapTime",
+			"VID":417, 
+			"Data": 
+			{
+				"Type":"A",
+				"Value":"Runtime/Lot Info/Lot Gap Time"
+			}
+		},
+		{
+			"VarName":"TotalUnitsRun",
+			"VID":421, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Total Units Run"
+			}
+		},
+		{
+			"VarName":"TotalOutputQty",
+			"VID":422, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Total Output Quantity"
+			}
+		},
+		{
+			"VarName":"TotalRejectQty",
+			"VID":423, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Total Reject Quantity"
+			}
+		},
+		{
+			"VarName":"TotalJamCount",
+			"VID":430, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Total Jam Count"
+			}
+		},
+		{
+			"VarName":"Taper1En",
+			"VID":446, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Setting/TAPER 1/Taper In Use"
+			}
+		},
+		{
+			"VarName":"Taper2En",
+			"VID":447, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Setting/TAPER 2/Taper In Use"
+			}
+		},
+		{
+			"VarName":"AutoCutter1En",
+			"VID":448, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Setting/TAPER 1/Auto Cut In Use"
+			}
+		},
+		{
+			"VarName":"AutoCutter2En",
+			"VID":449, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Setting/TAPER 2/Auto Cut In Use"
+			}
+		},
+		{
+			"VarName":"RejectSortingEn",
+			"VID":450, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #000/Enable"
+			}
+		},
+		{
+			"VarName":"OTFInspEn",
+			"VID":451, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #001/Enable"
+			}
+		},
+		{
+			"VarName":"BottomPVIInspEn",
+			"VID":452, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #002/Enable"
+			}
+		},
+		{
+			"VarName":"TopMarkInspEn",
+			"VID":453, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #003/Enable"
+			}
+		},
+		{
+			"VarName":"TICInspEn",
+			"VID":454, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #004/Enable"
+			}
+		},
+		{
+			"VarName":"OutputTICInspEn",
+			"VID":455, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #005/Enable"
+			}
+		},
+		{
+			"VarName":"FiveSideInspEn",
+			"VID":456,
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #006/Enable"
+			}
+		},
+		{
+			"VarName":"InPocketInspEn",
+			"VID":457, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #008/Enable"
+			}
+		},
+		{
+			"VarName":"PostSeal1InspEn",
+			"VID":458, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #009/Enable"
+			}
+		},
+		{
+			"VarName":"PostSeal2InspEn",
+			"VID":459, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #010/Enable"
+			}
+		},
+		{
+			"VarName":"VATInspEn",
+			"VID":460, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #007/Enable"
+			}
+		},
+		{
+			"VarName":"Top3DInspEn",
+			"VID":461, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #011/Enable"
+			}
+		},
+		{
+			"VarName":"Top2InspEn",
+			"VID":462, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #012/Enable"
+			}
+		},
+		{
+			"VarName":"BtmSWIRInspEn",
+			"VID":463, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #013/Enable"
+			}
+		},
+		{
+			"VarName":"LFFv2TBInspEn",
+			"VID":464, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #014/Enable"
+			}
+		},
+		{
+			"VarName":"LFFv2LRInspEn",
+			"VID":465, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #015/Enable"
+			}
+		},
+		{
+			"VarName":"StaticLineInspEn",
+			"VID":466, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #016/Enable"
+			}
+		},
+		{
+			"VarName":"Rej1TICInspEn",
+			"VID":467, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #017/Enable"
+			}
+		},
+		{
+			"VarName":"Rej2TICInspEn",
+			"VID":468, 
+			"Data": 
+			{
+				"Type":"U1",
+				"Value":"Process Station/Station #018/Enable"
+			}
+		},
+		{
+			"VarName":"OTFInspected",
+			"VID":501, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #001/Inspected"
+			}
+		},
+		{
+			"VarName":"BottomPVIInspected",
+			"VID":502, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #002/Inspected"
+			}
+		},
+		{
+			"VarName":"TopMarkInspected",
+			"VID":503,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #003/Inspected"
+			}
+		},
+		{
+			"VarName":"TICInspected",
+			"VID":504,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #004/Inspected"
+			}
+		},
+		{
+			"VarName":"OutputTICInspected",
+			"VID":505,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #005/Inspected"
+			}
+		},
+		{
+			"VarName":"FiveSideInspected",
+			"VID":506, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #006/Inspected"
+			}
+		},
+		{
+			"VarName":"InpocketInspected",
+			"VID":507, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #008/Inspected"
+			}
+		},
+		{
+			"VarName":"PostSeal1Inspected",
+			"VID":508, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #009/Inspected"
+			}
+		},
+		{
+			"VarName":"PostSeal2Inspected",
+			"VID":509, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #010/Inspected"
+			}
+		},
+		{
+			"VarName":"VATInspected",
+			"VID":510, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #007/Inspected"
+			}
+		},
+		{
+			"VarName":"Top3DInspected",
+			"VID":511, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #011/Inspected"
+			}
+		},
+		{
+			"VarName":"Top2Inspected",
+			"VID":512, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #012/Inspected"
+			}
+		},
+		{
+			"VarName":"BtmSWIRInspected",
+			"VID":513, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #013/Inspected"
+			}
+		},
+		{
+			"VarName":"LFFv2TBInspected",
+			"VID":514, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #014/Inspected"
+			}
+		},
+		{
+			"VarName":"LFFv2LRInspected",
+			"VID":515, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #015/Inspected"
+			}
+		},
+		{
+			"VarName":"StaticLineInspected",
+			"VID":516, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #016/Inspected"
+			}
+		},
+		{
+			"VarName":"Rej1TICInspected",
+			"VID":517, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #017/Inspected"
+			}
+		},
+		{
+			"VarName":"Rej2TICInspected",
+			"VID":518, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #018/Inspected"
+			}
+		},
+		{
+			"VarName":"OTFFail",
+			"VID":551, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #001/Rejected"
+			}
+		},
+		{
+			"VarName":"BottomPVIFail",
+			"VID":552, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #002/Rejected"
+			}
+		},
+		{
+			"VarName":"TopMarkVisFail",
+			"VID":553,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #003/Rejected"
+			}
+		},
+		{
+			"VarName":"TICVisFail",
+			"VID":554,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #004/Rejected"
+			}
+		},
+		{
+			"VarName":"OutputTICVisFail",
+			"VID":555,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #005/Rejected"
+			}
+		},
+		{
+			"VarName":"FiveSideFail",
+			"VID":556, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #006/Rejected"
+			}
+		},
+		{
+			"VarName":"InpocketFail",
+			"VID":557, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #008/Rejected"
+			}
+		},
+		{
+			"VarName":"PostSeal1Fail",
+			"VID":558, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #009/Rejected"
+			}
+		},
+		{
+			"VarName":"PostSeal2Fail",
+			"VID":559, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #010/Rejected"
+			}
+		},
+		{
+			"VarName":"VATFail",
+			"VID":560,
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #007/Rejected"
+			}
+		},
+		{
+			"VarName":"Top3DFail",
+			"VID":561, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #011/Rejected"
+			}
+		},
+		{
+			"VarName":"Top2Fail",
+			"VID":562, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #012/Rejected"
+			}
+		},
+		{
+			"VarName":"BtmSWIRFail",
+			"VID":563, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #013/Rejected"
+			}
+		},
+		{
+			"VarName":"LFFv2TBFail",
+			"VID":564, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #014/Rejected"
+			}
+		},
+		{
+			"VarName":"LFFv2LRFail",
+			"VID":565, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #015/Rejected"
+			}
+		},
+		{
+			"VarName":"StaticLineFail",
+			"VID":566, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #016/Rejected"
+			}
+		},
+		{
+			"VarName":"Rej1TICFail",
+			"VID":567, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #017/Rejected"
+			}
+		},
+		{
+			"VarName":"Rej2TICFail",
+			"VID":568, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Process Station/Station #018/Rejected"
+			}
+		},
+		{
+			"VarName":"OTFReject",
+			"VID":601, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/OTF Reject"
+			}
+		},
+		{
+			"VarName":"BottomPVIReject",
+			"VID":602, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Bottom Reject"
+			}
+		},
+		{
+			"VarName":"TopMarkReject",
+			"VID":603, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Top Reject"
+			}
+		},
+		{
+			"VarName":"TICReject",
+			"VID":604, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/TIC Reject"
+			}
+		},
+		{
+			"VarName":"OutputTICReject",
+			"VID":605, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Output TIC Reject"
+			}
+		},
+		{
+			"VarName":"FiveSideReject",
+			"VID":606, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/FiveSide Reject"
+			}
+		},
+		{
+			"VarName":"InPocketReject",
+			"VID":607, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/InPocket Reject"
+			}
+		},
+		{
+			"VarName":"VATReject",
+			"VID":610, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/VAT Reject"
+			}
+		},
+		{
+			"VarName":"Top3DReject",
+			"VID":611, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Top3D Reject"
+			}
+		},
+		{
+			"VarName":"Top2Reject",
+			"VID":612, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Top2 Reject"
+			}
+		},
+		{
+			"VarName":"BtmSWIRReject",
+			"VID":613, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/BtmSWIR Reject"
+			}
+		},
+		{
+			"VarName":"LFFv2TBReject",
+			"VID":614, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/LFFv2TB Reject"
+			}
+		},
+		{
+			"VarName":"LFFv2LRReject",
+			"VID":615, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/LFFv2 Reject"
+			}
+		},
+		{
+			"VarName":"StaticLineReject",
+			"VID":616, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/StaticLine Reject"
+			}
+		},
+		{
+			"VarName":"Rej1TICReject",
+			"VID":617, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Rej1TIC Reject"
+			}
+		},
+		{
+			"VarName":"Rej2TICReject",
+			"VID":618, 
+			"Data": 
+			{
+				"Type":"U4",
+				"Value":"Runtime/Lot Info/Rej2TIC Reject"
+			}
+		},
+	]
+}
