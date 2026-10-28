@@ -421,6 +421,17 @@ namespace ConfigurationManager.Tests
         }
 
         [Test]
+        public void RemoteCommandConfigFile_SectionMissing_ReturnsMinus9()
+        {
+            fixture.RcmdCfg = new IniBuilder().Set("Other", "RCMDDestPath", @"C:\RCMD");
+
+            var (_, rc, res) = Read();
+
+            Assert.That(rc, Is.EqualTo(-9));
+            Assert.That(res, Does.Contain("Rcmd").And.Contain("missing"));
+        }
+
+        [Test]
         public void TerminalRequestConfigFile_Missing_ReturnsMinus9()
         {
             fixture.TermReqCfg = null;
@@ -440,6 +451,28 @@ namespace ConfigurationManager.Tests
 
             Assert.That(rc, Is.EqualTo(-9));
             Assert.That(res, Does.Contain("TerminalReqDestPath"));
+        }
+
+        [Test]
+        public void TerminalRequestConfigFile_SectionMissing_ReturnsMinus9()
+        {
+            fixture.TermReqCfg = new IniBuilder().Set("Other", "TerminalReqDestPath", @"C:\Term\TermReq.dat");
+
+            var (_, rc, res) = Read();
+
+            Assert.That(rc, Is.EqualTo(-9));
+            Assert.That(res, Does.Contain("TermReq").And.Contain("missing"));
+        }
+
+        [Test]
+        public void TerminalRequestConfigFile_DestPathEmpty_ReturnsMinus9()
+        {
+            fixture.TermReqCfg.Set("TermReq", "TerminalReqDestPath", "");
+
+            var (_, rc, res) = Read();
+
+            Assert.That(rc, Is.EqualTo(-9));
+            Assert.That(res, Does.Contain("cannot be empty"));
         }
 
         [Test]
@@ -463,6 +496,19 @@ namespace ConfigurationManager.Tests
 
             Assert.That(rc, Is.EqualTo(-4));
             Assert.That(res, Does.Contain(key));
+        }
+
+        [Test]
+        public void AttributeRequestConfigFile_SectionMissing_ReturnsMinus4()
+        {
+            fixture.AttrReqCfg = new IniBuilder()
+                .Set("Other", "AttributRequestConfigPath", tempDir.PathOf("attrmsg.ini"))
+                .Set("Other", "AttributeDataFolder", @"C:\AttrData");
+
+            var (_, rc, res) = Read();
+
+            Assert.That(rc, Is.EqualTo(-4));
+            Assert.That(res, Does.Contain("AttrReq").And.Contain("not found"));
         }
 
         [Test]

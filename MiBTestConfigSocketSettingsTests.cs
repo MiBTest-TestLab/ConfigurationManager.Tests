@@ -186,6 +186,17 @@ namespace ConfigurationManager.Tests
             Assert.That(rc, Is.EqualTo(-3));
         }
 
+        [Test]
+        public async Task WaferMapSetupFileItems_SectionMissing_ReturnsMinus2()
+        {
+            var ini = MiBTestConfigFixture.ValidSocketCommConfig().RemoveSection("WaferMapSetupFileItems");
+
+            var (_, rc, res) = await LoadAsync(ini);
+
+            Assert.That(rc, Is.EqualTo(-2));
+            Assert.That(res, Does.Contain("WaferMapSetupFileItems").And.Contain("missing"));
+        }
+
         #endregion
 
         #region Map setup parameter sections
