@@ -110,3 +110,28 @@ These tests pin down behaviour that may or may not be intended. They pass today,
 * `LookupCliEventCEID` always returns `-2`, because reading the CLI event to CEID table was disabled in ver 1.0.0.9.
 * Calling `GemCliConfig.ReadGemCliConfig()` twice on the same instance fails (`-1`), because the variable dictionary is not cleared.
 * `BinaryRecipeFormat`: any non-zero number means binary (`1`). A missing or non-numeric value also defaults to `1`, with a `WARNING` in `GetDLLConfig`'s result. `ReadConfigFileAsync` does not pass that warning on.
+
+* When several `*Cmd` sections share the same `FrameData1`, `GetHandlingFunctionName` returns the **first** one in the file. Section order in MiBTest.ini is therefore part of the protocol (`MiBTestConfigGoldenFileTests`).
+* In the real STI CLI configuration, all sub-configurations are sections inside MiBTest.ini itself (`CLIGemVariables`, `CLIGemRemoteCommand`, ...), not separate files.
+* The real CLI GEM variable JSON has a trailing comma after the last array item; Newtonsoft.Json accepts it.
+* `AttributRequestConfigPath` is misspelt in both the code and the real configuration. Do not fix the spelling in one place only.
+* `EventConfig` points to a `CLIGemEvents` section that does not exist in the real file. It is not read since ver 1.0.0.9.
+* `RecipeConfig`, `VIDSetMulti` and `MmiWinHandle` exist in the real `[STICLI SECSGEM]` section but are not read by `GemCliConfig`.
+
+## Test Results
+
+Run from the `CSMiBTest-LowRes` folder:
+
+    .\scripts\Run-Tests.ps1 -TestProject "..\ConfigurationManager.Tests\ConfigurationManager.Tests.csproj"
+    .\scripts\New-ManagerSummary.ps1 -TestResultsDir "..\ConfigurationManager.Tests\TestResults" -ProjectName "ConfigurationManager.Tests" -FocusClasses "MiBTestConfig,GemCliConfig,JsonVidConfig,SECSAttrReqCfg" -FocusClassDescriptions "<see previous run>"
+
+| File | Audience | What it is |
+| ---- | -------- | ---------- |
+| `ManagerSummary.html` | Management | One page: test counts, coverage of the main modules, defects |
+| `CoverageReport\index.html` | Developers | Line-by-line coverage; red lines were not run by any test |
+| `CoverageReport\Summary.txt` | Developers | Coverage percentages as text |
+| `*.trx` | Developers, CI | Raw results of every test; opens in Visual Studio |
+| `coverage.cobertura.xml` | Tools | Raw coverage data used by the two reports above |
+| `defects.json` | Maintained by hand | Defect list shown in `ManagerSummary.html`; set `status` to `Fixed` when a bug is fixed |
+
+Each run overwrites the reports. Commit `TestResults` to keep a history.
